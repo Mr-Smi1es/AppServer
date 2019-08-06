@@ -1,0 +1,6 @@
+version: "3.4"  # this must match the version in docker-compose.yml
+services:
+
+  letsencrypt:
+    volumes:
+      - ${DOCKERCONFDIR}/guacamole/logs/:/var/log/guacamole/
